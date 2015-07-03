@@ -1,0 +1,11 @@
+{
+    "name": "angular-staying-sharp",
+    "version": "1.0.0",
+    "directory": "vendor/",
+    "dependencies":
+    {
+        "jquery": "2.1.1",
+        "angular": "~1.3.0",
+        "angular-route": "~1.3.0"
+    }
+}

@@ -1,0 +1,18 @@
+.card-notes
+{
+    display: block;
+
+    width: 200px;
+
+    border: 1px solid red;
+
+    float: left;
+
+    margin: 20px;
+    padding: 20px;
+}
+
+.card-notes h2
+{
+    margin: 0;
+}

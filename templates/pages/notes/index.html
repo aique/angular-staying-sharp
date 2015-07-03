@@ -1,0 +1,19 @@
+<div class="note-wrapper">
+
+    <h2>Listado de notas</h2>
+
+    <a class="card-notes" ng-repeat="note in indexCtrl.notes" ng-href="#/notes/{{note.id}}">
+
+        <div class="card" title="{{note.title}}">
+
+            <div ng-if="icon">
+                <i class="icon icon-card {{note.icon}}"></i>
+            </div>
+
+            <h2 class="h3">{{note.title}}</h2>
+
+        </div>
+
+    </a>
+
+</div>
