@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Primera nota",
+    "description": "Descripción de la primera nota"
+  },
+  {
+    "id": 2,
+    "title": "Segunda nota",
+    "description": "Descripción de la segunda nota"
+  }
+]
