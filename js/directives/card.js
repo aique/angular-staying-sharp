@@ -21,6 +21,7 @@
                 icon: '=', // icono de la tarjeta pasado como atributo
                 header: '=', // cabecera de la tarjeta pasado como atributo
                 description: '=', // descripción de la tarjeta pasado como atributo
+                image: '=', //url de la imágen asociada al contenido pasada como atributo
                 type: '@', // tipo de elemento a mostrar (nota o usuario) para crear el enlace al detalle
                 id: '=' // identificador del elemento a mostrar para crear el enlace al detalle
             },

@@ -2,11 +2,13 @@
   {
     "id": 1,
     "name": "Manuel",
-    "job": "Jefe de proyectos"
+    "job": "Jefe de proyectos",
+    "email": "manuel@gmail.com"
   },
   {
     "id": 2,
     "name": "Carmen",
-    "job": "Desarrolladora"
+    "job": "Desarrolladora",
+    "email": "carmen@gmail.com"
   }
 ]

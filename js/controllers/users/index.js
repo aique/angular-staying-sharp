@@ -1,6 +1,6 @@
 (function()
 {
-    angular.module('NoteWrangler').controller('UsersIndexController', function($http, $scope)
+    angular.module('NoteWrangler').controller('UsersIndexController', function($http, $scope, Gravatar)
     {
         $http(
         {
@@ -11,5 +11,12 @@
         {
             $scope.users = data;
         });
+
+        // método que obtiene la url del avatar de un usuario llamando al servicio Gravatar
+
+        $scope.gravatarUrl = function(email)
+        {
+            return Gravatar(email);
+        }
     });
 })();

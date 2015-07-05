@@ -1,12 +1,8 @@
 (function()
 {
-    angular.module('NoteWrangler').controller('NotesIndexController', function($http, $scope)
+    angular.module('NoteWrangler').controller('NotesIndexController', function($scope, Note)
     {
-        $http(
-        {
-            method: 'GET',
-            url: '/server/notes.php'
-        })
+        Note.all()
         .success(function(data)
         {
             $scope.notes = data;
