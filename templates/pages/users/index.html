@@ -1,7 +1,15 @@
-<div>
+<div class="note-wrapper">
 
     <h2>Listado de usuarios</h2>
 
-    <ul></ul>
+    <a class="card-notes" ng-repeat="user in users">
+
+        <card header="user.name"
+              description="user.job"
+              icon="user.icon"
+              type="users"
+              id="user.id"></card>
+
+    </a>
 
 </div>

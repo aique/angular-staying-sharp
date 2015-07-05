@@ -7,7 +7,7 @@
         $http(
         {
             method: 'GET',
-            url: '/notes.php',
+            url: '/server/notes.php',
             params: {id: $routeParams.id}
         })
         .success(function(data)

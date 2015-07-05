@@ -1,18 +1,62 @@
+body
+{
+    padding: 20px;
+}
+
+a
+{
+    color: cornflowerblue;
+
+    text-decoration: none;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.nav-list a
+{
+    margin-right: 20px;
+
+    font-weight: bold;
+    font-size: large;
+
+    text-transform: uppercase;
+}
+
+.nav-list a.active
+{
+    text-decoration: underline;
+}
+
 .card-notes
 {
     display: block;
 
     width: 200px;
 
-    border: 1px solid red;
-
     float: left;
 
-    margin: 20px;
+    margin: 20px 20px 0 0;
     padding: 20px;
+
+    text-decoration: none;
+
+    color: #333;
+    background-color: #eee;
 }
 
 .card-notes h2
 {
     margin: 0;
+}
+
+.card-notes .detail-link
+{
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 14px;
 }

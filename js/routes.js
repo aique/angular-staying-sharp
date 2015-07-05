@@ -4,12 +4,13 @@
 
     angular.module('NoteWrangler').config(function($routeProvider)
     {
+        // en la primera ruta se ha utilizado $scope, por lo que no es necesario definir un alias para el controlador
+
         $routeProvider
         .when('/notes', // se especifica una vista
         {
             templateUrl: 'templates/pages/notes/index.html',
-            controller:  'NotesIndexController', // controlador que será escuchado antes de servir la vista, definido en js/controllers/notes-index-controller
-            controllerAs: 'indexCtrl' // alias para el controlador
+            controller:  'NotesIndexController' // controlador que será escuchado antes de servir la vista, definido en js/controllers/notes-index-controller
         })
         .when('/notes/:id',
         {
@@ -19,7 +20,8 @@
         })
         .when('/users', // se especifica otra vista
         {
-            templateUrl: 'templates/pages/users/index.html'
+            templateUrl: 'templates/pages/users/index.html',
+            controller: 'UsersIndexController'
         })
         .when('/', // se especifica la vista por defecto
         {
