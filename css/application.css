@@ -27,6 +27,40 @@ fieldset
     clear: both;
 }
 
+.main-wrapper,
+.nav-list
+{
+    width: 960px;
+
+    margin: 0 auto;
+}
+
+.note-wrapper
+{
+    width: 75%;
+
+    float: left;
+}
+
+.category-select
+{
+    width: 25%;
+
+    float: right;
+}
+
+.category a
+{
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.category a.active
+{
+    text-decoration: underline;
+}
+
 .nav-list a
 {
     margin-right: 20px;
