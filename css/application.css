@@ -10,9 +10,21 @@ a
     text-decoration: none;
 }
 
+fieldset
+{
+    border: none;
+
+    padding-left: 0;
+}
+
 .hidden
 {
     display: none;
+}
+
+.clear
+{
+    clear: both;
 }
 
 .nav-list a
@@ -59,4 +71,11 @@ a
     margin-top: 15px;
 
     font-size: 14px;
+}
+
+.new-note-link
+{
+    display: block;
+
+    margin-top: 20px;
 }

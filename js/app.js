@@ -2,5 +2,9 @@
 {
     // no se crea una variable y se añaden controladores a ella como en anteriores ejemplos, ya que eso se considera una mala práctica
 
-    angular.module('NoteWrangler', ['ngRoute']);
+    angular.module('NoteWrangler', ['ngRoute', 'ngResource'])
+        .config(function(GravatarProvider)
+        {
+            GravatarProvider.setSize(100);
+        });
 })();

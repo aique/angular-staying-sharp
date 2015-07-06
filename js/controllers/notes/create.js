@@ -1,23 +1,18 @@
 (function()
 {
-    angular.module('NoteWrangler').controller('NoteCreateCtrl', function($http)
+    angular.module('NoteWrangler').controller('NotesCreateCtrl', function($scope, Note)
     {
-        var controller = this;
+        $scope.note = new Note();
 
-        this.saveNote = function(note)
+        $scope.saveNote = function(note)
         {
-            controller.errors = null;
+            $scope.errors = null;
 
-            $http(
-            {
-                method: 'POST',
-                url: '/notes',
-                data: note
-            })
+            note.$save(note)
             .catch(function(note)
             {
-                controller.errors = note.data.error;
-            });
+                $scope.errors = [note.data.error];
+            })
         }
     });
 })();

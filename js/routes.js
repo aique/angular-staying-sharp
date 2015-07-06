@@ -18,6 +18,11 @@
             controller: 'NotesShowCtrl',
             controllerAs: 'showCtrl'
         })
+        .when('/notes-create', // se especifica una vista
+        {
+            templateUrl: 'templates/pages/notes/create.html',
+            controller:  'NotesCreateCtrl'
+        })
         .when('/users', // se especifica otra vista
         {
             templateUrl: 'templates/pages/users/index.html',

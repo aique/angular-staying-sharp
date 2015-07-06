@@ -1,0 +1,2 @@
+- Incluir el método modificar, añadiendo un método propio en el servicio Note llamado update
+- Incluir el método eliminar

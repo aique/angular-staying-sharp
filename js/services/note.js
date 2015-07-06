@@ -7,17 +7,26 @@
      */
 
     angular.module('NoteWrangler').factory
-    ('Note', function NoteFactory($http)
-    {
-        return {
-            all: function()
-            {
-                return $http({method: 'GET', url: '/server/notes.php'});
-            },
-            create: function(note)
-            {
-                return $http({method: 'POST', url: '/notes', data: note})
-            }
+    (
+        'Note', function NoteFactory($http, $resource)
+        {
+            //return {
+            //    all: function()
+            //    {
+            //        return $resource({method: 'GET', url: '/server/notes.php'});
+            //    },
+            //    create: function(note)
+            //    {
+            //        return $http({method: 'POST', url: '/server/notes.php', data: note})
+            //    }
+            //}
+
+            /**
+             * El anterior código devuelve un objeto utilizando $http, a continuación se
+             * utilizará $resource para realizar la misma funcionalidad que las líneas comentadas.
+             */
+
+            return $resource('/server/notes.php/:id', {}, {});
         }
-    });
+    );
 })();

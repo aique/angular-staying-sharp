@@ -1,4 +1,4 @@
-<p ng-if="createCtrl.errors"> {{createCtrl.errors}} </p>
+<p ng-if="errors"> {{errors}} </p>
 
 <div class="new-note">
 
@@ -7,21 +7,16 @@
         <form class="form">
 
             <fieldset>
-                <label for="title">Title</label>
+                <label for="title">Title</label><br />
                 <input name="title" ng-model="note.title" />
             </fieldset>
 
             <fieldset>
-                <label for="description">Description</label>
+                <label for="content">Description</label><br />
                 <textarea name="description" ng-model="note.description"></textarea>
             </fieldset>
 
-            <fieldset>
-                <label for="content">Content</label>
-                <textarea name="content" ng-model="note.content"></textarea>
-            </fieldset>
-
-            <button class="btn" ng-click="createCtrl.saveNote(note)">Save</button>
+            <button class="btn" ng-click="saveNote(note)">Save</button>
 
         </form>
 
