@@ -2,7 +2,12 @@
 
     <h2>Listado de notas</h2>
 
-    <div class="card-notes" ng-repeat="note in notes">
+    <form>
+        <label for="search-bar">Buscar</label>
+        <input type="text" id="search-bar" name="search-bar" ng-model="search.title">
+    </form>
+
+    <div class="card-notes" ng-repeat="note in notes | filter: {category: activeCategory} | filter: search">
 
         <card header="note.title"
               description="note.description"
@@ -18,4 +23,4 @@
 
 </div>
 
-<category-select class="category-select"></category-select>
+<category-select class="category-select" active-category="activeCategory" notes="notes"></category-select>

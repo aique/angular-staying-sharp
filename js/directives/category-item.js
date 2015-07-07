@@ -2,7 +2,7 @@
 {
     angular.module('NoteWrangler').directive
     (
-        'categoryItem', function(NotesInCategoryProvider)
+        'categoryItem', function(Category)
         {
             return {
                 restrict: 'E',
@@ -26,7 +26,7 @@
 
                     scope.categoryCount = function()
                     {
-                        return '(' + NotesInCategoryProvider() + ')';
+                        return categorySelectCtrl.getNotesCountForCategory(scope.category);
                     };
                 }
             }
